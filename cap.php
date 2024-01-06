@@ -1,38 +1,4 @@
 <?php
-// session_start();
-
-// // Generate random captcha text
-// $captchaText = substr(md5(mt_rand()), 0,7);
-
-// // Set captcha text in session
-// $_SESSION['captcha'] = $captchaText;
-
-// // Create image
-// $captchaImage = imagecreatetruecolor(170, 50);
-
-// // Colors
-// $bgColor = imagecolorallocate($captchaImage, 255, 255, 255);
-// $textColor = imagecolorallocate($captchaImage, 0, 0, 0);
-
-// // Fill background
-// imagefilledrectangle($captchaImage, 0, 0, 270, 50, $bgColor);
-
-// // Add text to image
-// imagettftext($captchaImage, 20, 0, 10, 35, $textColor, 'noise.otf', $captchaText);
-
-// // Set the content type
-// header('Content-type: image/png');
-
-// // Output the image
-// imagepng($captchaImage);
-
-// // Free up memory
-// imagedestroy($captchaImage);
-
-
-
-
-
 session_start();
 
 // Generate random captcha text
