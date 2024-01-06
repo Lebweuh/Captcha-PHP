@@ -1,0 +1,24 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $captchaAnswer = $_SESSION['captcha'];
+    $captchaInput = $conn->real_escape_string($_POST['captcha']);
+    if ($rcap != $cap) {
+        echo "nope"
+    } else {
+        echo "correct"
+}
+?>
+
+
+<script>
+    function reloadCaptcha() {
+      var captchaImage = document.getElementById('captcha-img');
+      captchaImage.src = 'cap.php?' + new Date().getTime();
+    }
+</script>
+
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+<img type="cap" id="captcha-img" src="cap.php" alt="Captcha Image">
+<input type="captcha" name="captcha" placeholder="Code" maxlength="20" required>
+<button type="button" onclick="reloadCaptcha()">Change CAPTCHA Code</button>
+</form>
