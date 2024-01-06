@@ -16,23 +16,24 @@ Actually There Are Just Only Two Requirements You Just Need A Font File To Use A
 ## **SETUP**
 Create a php file and paste ```cap.php``` inside of it. Whenever you refresh the page, the captcha image should look like this based on your settings:
 
-Normal Captcha: Hard For Robots To Solve Through OCR
+Normal Captcha: Hard For Robots To Solve Through OCR__
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap.png)
 
-Plus Noisy: It Is Now Even Harder To Read It So We Decreased The Chance Of OCR Algorithms Detect What It Says
+Plus Noisy: It Is Now Even Harder To Read It So We Decreased The Chance Of OCR Algorithms Detect What It Says__
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap2.png)
 
-Added Security: More Noise Equals More Secure Right? Now Its OCR's Time To Think
+Added Security: More Noise Equals More Secure Right? Now Its OCR's Time To Think__
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap3.png)
 
-Not Secure Enough: I Can Still See What It Says
+Not Secure Enough: I Can Still See What It Says__
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap4.png)
 
-Pure Perfection: If No One Can Read The Image It Is Secure
+Pure Perfection: If No One Can Read The Image It Is Secure__
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap5.png)
 
 ## **CODE EXAMPLE**
 ```php
+<?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $captchaAnswer = $_SESSION['captcha'];
     $captchaInput = $conn->real_escape_string($_POST['captcha']);
@@ -41,6 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Correct Caprcha
 }
+?>
+
 
 <script>
     function reloadCaptcha() {
@@ -107,12 +110,12 @@ Save the changes to `php.ini` and restart the Apache server through the XAMPP Co
 
 #### *Apache Server on Linux (Ubuntu/Debian/CentOS/RHEL):*
 Run the following command in your terminal to install the GD library for PHP: 
-```http
+```
 sudo apt-get install php-gd # For Ubuntu/Debian
 sudo yum install php-gd # For CentOS/RHEL
 ```
 After installing the GD library, restart your Apache server for changes to take effect:
-```http
+```
 sudo service apache2 restart # For Ubuntu/Debian
 sudo systemctl restart httpd # For CentOS/RHEL
 ```
@@ -121,12 +124,12 @@ sudo systemctl restart httpd # For CentOS/RHEL
 
 #### *Nginx Web Server (Ubuntu/Debian/CentOS/RHEL):*
 Use the package manager to install the GD library:
-```http
+```
 sudo apt-get install php-gd # Ubuntu/Debian
 sudo yum install php-gd # CentOS/RHEL
 ```
  After installation, restart the Nginx server:
-```http
+```
 sudo systemctl restart nginx # Ubuntu/Debian
 sudo systemctl restart php-fpm # CentOS/RHEL
 ```
