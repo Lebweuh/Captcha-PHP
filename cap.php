@@ -1,32 +1,35 @@
 <?php
 session_start();
 
-// Generate random captcha text (you can change character count. currently it is 7)
-$captchaText = substr(md5(mt_rand()), 0, 7);
+// Variables for captcha generation
+$noiseLevel = 600; // Number of noise pixels
+$imageWidth = 170; // Width of the captcha image
+$imageHeight = 50; // Height of the captcha image
+$textSize = 20; // Size of the captcha text
+$charCount = 7; // Number of characters in captcha
+$font = 'noise.otf'; // Path To The Font File
 
-// Store captcha text in session
+// Generate random captcha text
+$captchaText = substr(md5(mt_rand()), 0, $charCount);
+
+// Set captcha text in session
 $_SESSION['captcha'] = $captchaText;
 
-// Create image (you can set resolution here)
-$captchaImage = imagecreatetruecolor(170, 50);
+// Create image
+$captchaImage = imagecreatetruecolor($imageWidth, $imageHeight);
 
 // Colors
 $bgColor = imagecolorallocate($captchaImage, 255, 255, 255);
 $textColor = imagecolorallocate($captchaImage, 0, 0, 0);
 
 // Fill background with noise
-imagefilledrectangle($captchaImage, 0, 0, 170, 50, $bgColor);
-for ($i = 0; $i < 600; $i++) {
-    imagesetpixel($captchaImage, mt_rand(0, 170), mt_rand(0, 50), $textColor);
+imagefilledrectangle($captchaImage, 0, 0, $imageWidth, $imageHeight, $bgColor);
+for ($i = 0; $i < $noiseLevel; $i++) {
+    imagesetpixel($captchaImage, mt_rand(0, $imageWidth), mt_rand(0, $imageHeight), $textColor);
 }
 
-// Add text to image with distortion
-$textSize = 20;
 
-//Use custom font for captcha to make it more complicated (and still readable by humans).
-$font = 'font.otf';
 
-//Some php magic happens here to create the image
 for ($i = 0; $i < strlen($captchaText); $i++) {
     $x = 20 * $i + 10;
     $y = mt_rand(30, 35);
