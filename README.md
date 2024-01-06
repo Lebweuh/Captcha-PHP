@@ -16,7 +16,7 @@ Actually There Are Just Only Two Requirements You Just Need A Font File To Use A
 ## **SETUP**
 Create a php file and paste ```cap.php``` inside of it. Whenever you refresh the page, the captcha image should look like this based on your settings:
 
-Normal Captcha: Hard For Robots To Solve Through OCR__
+Normal Captcha: Hard For Robots To Solve Through OCR<br />
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap.png)
 
 Plus Noisy: It Is Now Even Harder To Read It So We Decreased The Chance Of OCR Algorithms Detect What It Says<br />
