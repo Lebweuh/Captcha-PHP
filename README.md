@@ -19,16 +19,16 @@ Create a php file and paste ```cap.php``` inside of it. Whenever you refresh the
 Normal Captcha: Hard For Robots To Solve Through OCR__
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap.png)
 
-Plus Noisy: It Is Now Even Harder To Read It So We Decreased The Chance Of OCR Algorithms Detect What It Says__
+Plus Noisy: It Is Now Even Harder To Read It So We Decreased The Chance Of OCR Algorithms Detect What It Says<br />
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap2.png)
 
-Added Security: More Noise Equals More Secure Right? Now Its OCR's Time To Think__
+Added Security: More Noise Equals More Secure Right? Now Its OCR's Time To Think<br />
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap3.png)
 
-Not Secure Enough: I Can Still See What It Says__
+Not Secure Enough: I Can Still See What It Says<br />
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap4.png)
 
-Pure Perfection: If No One Can Read The Image It Is Secure__
+Pure Perfection: If No One Can Read The Image It Is Secure<br />
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap5.png)
 
 ## **CODE EXAMPLE**
@@ -106,7 +106,7 @@ Open `php.ini` file in the PHP folder (xampp\php\php.ini) and uncomment (remove 
 
 Save the changes to `php.ini` and restart the Apache server through the XAMPP Control Panel.
 
-.
+<br />
 
 #### *Apache Server on Linux (Ubuntu/Debian/CentOS/RHEL):*
 Run the following command in your terminal to install the GD library for PHP: 
@@ -119,7 +119,7 @@ After installing the GD library, restart your Apache server for changes to take 
 sudo service apache2 restart # For Ubuntu/Debian
 sudo systemctl restart httpd # For CentOS/RHEL
 ```
-`
+<br />
 
 
 #### *Nginx Web Server (Ubuntu/Debian/CentOS/RHEL):*
