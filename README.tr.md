@@ -21,14 +21,14 @@ Benim gibi üçüncü taraf uygulamalar kullanmak istemeyen insanlar için kulla
 1. [Kurulum](#kurulum) <br />
 2. [Örnek Kod](#örnek-kod) <br />
 3. [Kişiselleştirme](#ki̇şi̇selleşti̇rme) <br />
-4. [Çeşitli Web Sunucuları için GD Sunucusu Kurulumu](#çeşitli-web-sunucuları-i̇çin-gd-server-kurulumu) <br />
+4. [Çeşitli Web Sunucuları için GD Server Kurulumu](#çeşitli-web-sunucuları-i̇çin-gd-server-kurulumu) <br />
     - [Windows'da Apache Sunucusu (XAMPP)](#windows-i̇çin-apache-sunucusu-xampp) <br />
     - [Linux'ta Apache Sunucusu (Ubuntu/Debian/CentOS/RHEL)](#linux-i̇çin-apache-sunucusu-ubuntudebiancentosrhel) <br />
     - [Nginx Web Sunucusu (Ubuntu/Debian/CentOS/RHEL)](#nginx-web-sunucusu-ubuntudebiancentosrhel) <br />
 <br />
 
 ## **GEREKSİNİMLER**
-Aslında sadece iki gereksinim var, kullanım için bir veya birden fazla font dosyası ve Web Sunucunuzda GD Kütüphanesini etkinleştirmeniz gerekiyor. [Çeşitli Web Sunucuları için GD Sunucusu Kurulumu](#çeşitli-web-sunucuları-için-gd-sunucusu-kurulumu) nasıl yapılacağını görmek için aşağıya kaydırın. 
+Aslında sadece iki gereksinim var, kullanım için bir veya birden fazla font dosyası ve Web Sunucunuzda GD Kütüphanesini etkinleştirmeniz gerekiyor. [Çeşitli Web Sunucuları için GD Server Kurulumu](#çeşitli-web-sunucuları-i̇çin-gd-server-kurulumu) nasıl yapılacağını görmek için aşağıya kaydırın. 
 <br />
 
 
