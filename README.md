@@ -59,7 +59,7 @@ The Answer For Captcha Is Stored As Session Variable Named "captcha"
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $captchaAnswer = $_SESSION['captcha'];
-    $captchaInput = $conn->real_escape_string($_POST['captcha']);
+    $captchaInput = $_POST['captcha'];
     if ($captchaAnswer != $captchaInput) {
         // Failed Captcha
     } else {
@@ -185,6 +185,11 @@ sudo yum install php-gd # CentOS/RHEL
 sudo systemctl restart nginx # Ubuntu/Debian
 sudo systemctl restart php-fpm # CentOS/RHEL
 ```
+
+<br />
+<br />
+<br />
+
 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
