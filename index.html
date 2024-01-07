@@ -1,11 +1,13 @@
 <?php
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $captchaAnswer = $_SESSION['captcha'];
-    $captchaInput = $conn->real_escape_string($_POST['captcha']);
-    if ($rcap != $cap) {
-        echo "nope"
+    $captchaInput = $_POST['captcha'];
+    if ($captchaAnswer == $captchaInput) {
+        echo "CORRECT CAPTCHA";
     } else {
-        echo "correct"
+        echo "WRONG CAPTCHA";
+}
 }
 ?>
 
