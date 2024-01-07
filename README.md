@@ -45,7 +45,7 @@ Not Secure Enough: I Can Still See What It Says<br />
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap4.png)
 
 Pure Perfection: If No One Can Read The Image It Is Secure<br />
-![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap5.png) <br /> <br /><br /><br />
+![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap5.png) <br /> <br /><br />
 
 Disortion + Noise + Lines + Random Text And Background Colors<br />
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap6.png) <br />
@@ -54,6 +54,7 @@ Disortion + Noise + Lines + Random Text + Background Colors And MATH (the resolu
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap7.png) <br />
 
 ## **CODE EXAMPLE**
+The Answer For Captcha Is Stored As Session Variable Named "captcha"
 ```php
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -84,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 This is just an example adjust the code for your needs.
 
 Notes To User:
-- Always Rate-Limit The Client To Prevent Abuse
+- Always Rate-Limit The Client To Prevent Abuse Or Bruteforce
 - Never Trust The Client Input For Obvious Reasons
 - Do Not Forget To Sanitize Inputs Before Processing <br />
 
