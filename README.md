@@ -10,13 +10,16 @@ Very easy to use captcha system for people who dont want to use third party apps
 - Everything Is Customizable
 
 ## Sections
-[Setup](#setup)
-[Code Example](#code-example)
-[Customization](#customization)
-[GD Server Setup For Various Webservers](#gd-server-setup-for-various-webservers)
-
+1. [Setup](#setup) <br />
+2. [Code Example](#code-example) <br />
+3. [Customization](#customization) <br />
+4. [GD Server Setup For Various Webservers](#gd-server-setup-for-various-webservers) <br />
+    - [Apache Server on Windows (XAMPP)](#apache-server-on-windows-xampp) <br />
+    - [Apache Server on Linux (Ubuntu/Debian/CentOS/RHEL)](#apache-server-on-linux-ubuntudebiancentosrhel) <br />
+    - [Nginx Web Server (Ubuntu/Debian/CentOS/RHEL)](#nginx-web-server-ubuntudebiancentosrhel) <br />
+<br />
 ## **REQUIREMENTS**
-Actually There Are Just Only Two Requirements You Just Need A Font File To Use And Enable GD Library On Your Web Server. Scroll Bottom To See How To Setup [GD Server On Various Webservers.](#gd-server-setup-for-various-webservers)
+Actually There Are Just Only Two Requirements You Just Need A Font File To Use And Enable GD Library On Your Web Server. Scroll Bottom To See How To Setup [GD Server On Various Webservers.](#gd-server-setup-for-various-webservers) <br />
 
 
 ## **SETUP**
@@ -35,7 +38,7 @@ Not Secure Enough: I Can Still See What It Says<br />
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap4.png)
 
 Pure Perfection: If No One Can Read The Image It Is Secure<br />
-![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap5.png)
+![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap5.png) <br />
 
 ## **CODE EXAMPLE**
 ```php
@@ -70,7 +73,7 @@ This is just an example adjust the code for your needs.
 Notes To User:
 - Always Rate-Limit The Client To Prevent Abuse
 - Never Trust The Client For Obvious Reasons
-- Do Not Forget To Sanitize Inputs Before Processing
+- Do Not Forget To Sanitize Inputs Before Processing <br />
 
 ## **CUSTOMIZATION**
 You Can Custoomiza Whatever You Want Based On Your Needs. Code Is Self-Explaining Though But Just Filling The README.md You Know.
@@ -103,6 +106,7 @@ $imageHeight = 50;
 ```php
 $textSize = 20;
 ```
+<br />
 
 ## **GD Server Setup For Various Webservers**
 Always ensure to check your PHP version and adjust the commands accordingly. The paths and commands might differ based on your system's configuration and version.
