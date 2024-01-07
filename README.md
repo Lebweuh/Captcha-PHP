@@ -9,8 +9,14 @@ Very easy to use captcha system for people who dont want to use third party apps
 - Custom Fonts
 - Everything Is Customizable
 
+## Sections
+[Setup](#setup)
+[Code Example](#code-example)
+[Customization](#customization)
+[GD Server Setup For Various Webservers](#gd-server-setup-for-various-webservers)
+
 ## **REQUIREMENTS**
-Actually There Are Just Only Two Requirements You Just Need A Font File To Use And Enable GD Library On Your Web Server. Scroll Bottom To See How To Setup (GD Server On Various Webservers.)[#gd-server-setup-for-various-webservers]
+Actually There Are Just Only Two Requirements You Just Need A Font File To Use And Enable GD Library On Your Web Server. Scroll Bottom To See How To Setup [GD Server On Various Webservers.](#gd-server-setup-for-various-webservers)
 
 
 ## **SETUP**
@@ -66,8 +72,8 @@ Notes To User:
 - Never Trust The Client For Obvious Reasons
 - Do Not Forget To Sanitize Inputs Before Processing
 
-## **USAGE**
-You Dont Need To Change Anything Actually The Code Is Self-Explaining Im Just Filling README.md
+## **CUSTOMIZATION**
+You Can Custoomiza Whatever You Want Based On Your Needs. Code Is Self-Explaining Though But Just Filling The README.md You Know.
 
 ### Set character count
 
@@ -89,13 +95,13 @@ $noiseLevel = 600;
 
 ### Set Resolution
 ```php
-$imageWidth = 170; // Width of the captcha image
-$imageHeight = 50; // Height of the captcha image
+$imageWidth = 170;
+$imageHeight = 50;
 ```
 
 ### Set Text Size
 ```php
-$textSize = 20; // Size of the captcha text
+$textSize = 20;
 ```
 
 ## **GD Server Setup For Various Webservers**
