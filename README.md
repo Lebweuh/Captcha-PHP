@@ -57,13 +57,16 @@ Disortion + Noise + Lines + Random Text + Background Colors And MATH (the resolu
 The Answer For Captcha Is Stored As Session Variable Named "captcha"
 ```php
 <?php
+<?php
+session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $captchaAnswer = $_SESSION['captcha'];
     $captchaInput = $_POST['captcha'];
-    if ($captchaAnswer != $captchaInput) {
-        // Failed Captcha
+    if ($captchaAnswer == $captchaInput) {
+        echo "CORRECT CAPTCHA";
     } else {
-        // Correct Caprcha
+        echo "WRONG CAPTCHA";
+}
 }
 ?>
 
@@ -76,11 +79,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </script>
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-<img type="cap" id="captcha-img" src="captcha.php" alt="Captcha Image">
+<img type="cap" id="captcha-img" src="cap.php" alt="Captcha Image">
 <input type="captcha" name="captcha" placeholder="Code" maxlength="20" required>
 <button type="button" onclick="reloadCaptcha()">Change CAPTCHA Code</button>
 </form>
-
 ```
 This is just an example adjust the code for your needs.
 
