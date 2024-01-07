@@ -10,7 +10,7 @@ Very easy to use captcha system for people who dont want to use third party apps
 - Everything Is Customizable
 
 ## **REQUIREMENTS**
-Actually There Are Just Only Two Requirements You Just Need A Font File To Use And Enable GD Library On Your Web Server. Scroll Bottom To See How To Setup GD Server On Various Webservers.
+Actually There Are Just Only Two Requirements You Just Need A Font File To Use And Enable GD Library On Your Web Server. Scroll Bottom To See How To Setup (GD Server On Various Webservers.)[#gd-server-setup-for-various-webservers]
 
 
 ## **SETUP**
