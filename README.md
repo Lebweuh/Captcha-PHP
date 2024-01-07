@@ -1,12 +1,17 @@
 
 # Captcha PHP
-Very easy to use captcha system for people who dont want to use third party apps for captcha like me.
+Very easy to use advanced captcha system for people who dont want to use third party apps for captcha like me.
 
 ## Features
 
 - Noise Generation
+- Disortion Generation
 - Text Relocating (rotation, position)
 - Custom Fonts
+- Multiple Font Support
+- Optional Math Question
+- Optional Color Changing Background And Text
+- Oprional Draw Lines
 - Everything Is Customizable
 
 ## Sections
@@ -18,8 +23,10 @@ Very easy to use captcha system for people who dont want to use third party apps
     - [Apache Server on Linux (Ubuntu/Debian/CentOS/RHEL)](#apache-server-on-linux-ubuntudebiancentosrhel) <br />
     - [Nginx Web Server (Ubuntu/Debian/CentOS/RHEL)](#nginx-web-server-ubuntudebiancentosrhel) <br />
 <br />
+
 ## **REQUIREMENTS**
-Actually There Are Just Only Two Requirements You Just Need A Font File To Use And Enable GD Library On Your Web Server. Scroll Bottom To See How To Setup [GD Server On Various Webservers.](#gd-server-setup-for-various-webservers) <br />
+Actually There Are Just Only Two Requirements You Just Need One Or Multiple Font File To Use And Enable GD Library On Your Web Server. Scroll Bottom To See How To Setup [GD Server On Various Webservers.](#gd-server-setup-for-various-webservers) 
+<br />
 
 
 ## **SETUP**
@@ -38,7 +45,13 @@ Not Secure Enough: I Can Still See What It Says<br />
 ![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap4.png)
 
 Pure Perfection: If No One Can Read The Image It Is Secure<br />
-![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap5.png) <br />
+![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap5.png) <br /> <br /><br /><br />
+
+Disortion + Noise + Lines + Random Text And Background Colors<br />
+![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap6.png) <br />
+
+Disortion + Noise + Lines + Random Text + Background Colors And MATH (the resolution can be changed)<br />
+![1](https://raw.githubusercontent.com/Lebweuh/Captcha-PHP/main/example%20images/cap7.png) <br />
 
 ## **CODE EXAMPLE**
 ```php
@@ -46,7 +59,7 @@ Pure Perfection: If No One Can Read The Image It Is Secure<br />
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $captchaAnswer = $_SESSION['captcha'];
     $captchaInput = $conn->real_escape_string($_POST['captcha']);
-    if ($rcap != $cap) {
+    if ($captchaAnswer != $captchaInput) {
         // Failed Captcha
     } else {
         // Correct Caprcha
@@ -72,7 +85,7 @@ This is just an example adjust the code for your needs.
 
 Notes To User:
 - Always Rate-Limit The Client To Prevent Abuse
-- Never Trust The Client For Obvious Reasons
+- Never Trust The Client Input For Obvious Reasons
 - Do Not Forget To Sanitize Inputs Before Processing <br />
 
 ## **CUSTOMIZATION**
@@ -85,9 +98,9 @@ $charCount = 7;
 ```
 
 ### Get yourself a font for captcha
-get yourself some nice font to use in your captcha. you can remove it from code but extra security wont hurt
+get yourself font files to use in your image generation. you can use only one but multiple fonts supported.
 ```php
-$font = 'noise.otf';
+$fonts = ['noise.otf', 'noise.otf', 'noise.otf'];
 ```
 
 ### Set the noise amount
@@ -105,6 +118,34 @@ $imageHeight = 50;
 ### Set Text Size
 ```php
 $textSize = 20;
+```
+
+
+### Set Character Count
+```php
+$charCount = 7;
+```
+
+
+### Set Disortion
+```php
+$distortionLevel = 10;
+```
+
+
+### Optionally Add Randomness To Image
+```php
+$drawLines = true;
+$colorChangingBackground = true;
+$randomTextColor = true;
+```
+
+
+### Optionally Enable Math Questions For Harder Captchas
+```php
+$useMathQuestion = true;
+$mathMax = 10; // Maximum Value For Math Question
+$mathMin  = 1; //Minimum Value For Math Question
 ```
 <br />
 
