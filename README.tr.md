@@ -1,3 +1,7 @@
+![TR](https://img.shields.io/badge/README-T%C3%BCrk%C3%A7e-blue?link=https%3A%2F%2Fgithub.com%2FLebweuh%2FCaptcha-PHP%2Fblob%2Fmain%2FREADME.tr.md)
+![EN](https://img.shields.io/badge/README-English-blue?link=https%3A%2F%2Fgithub.com%2FLebweuh%2FCaptcha-PHP%2Fblob%2Fmain%2FREADME.md)
+
+
 # Captcha PHP
 Benim gibi üçüncü taraf uygulamalar kullanmak istemeyen insanlar için kullanımı çok kolay gelişmiş bir captcha sistemidir.
 
@@ -16,10 +20,10 @@ Benim gibi üçüncü taraf uygulamalar kullanmak istemeyen insanlar için kulla
 ## Bölümler
 1. [Kurulum](#kurulum) <br />
 2. [Örnek Kod](#örnek-kod) <br />
-3. [Kişiselleştirme](#kisisellestirme) <br />
-4. [Çeşitli Web Sunucuları için GD Sunucusu Kurulumu](#cesitli-web-sunucuları-icin-gd-sunucusu-kurulumu) <br />
-    - [Windows'da Apache Sunucusu (XAMPP)](#windows-icin-apache-sunucusu-xampp) <br />
-    - [Linux'ta Apache Sunucusu (Ubuntu/Debian/CentOS/RHEL)](#linux-icin-apache-sunucusu-ubuntudebiancentosrhel) <br />
+3. [Kişiselleştirme](#ki̇şi̇selleşti̇rme) <br />
+4. [Çeşitli Web Sunucuları için GD Sunucusu Kurulumu](#çeşitli-web-sunucuları-i̇çin-gd-server-kurulumu) <br />
+    - [Windows'da Apache Sunucusu (XAMPP)](#windows-i̇çin-apache-sunucusu-xampp) <br />
+    - [Linux'ta Apache Sunucusu (Ubuntu/Debian/CentOS/RHEL)](#linux-i̇çin-apache-sunucusu-ubuntudebiancentosrhel) <br />
     - [Nginx Web Sunucusu (Ubuntu/Debian/CentOS/RHEL)](#nginx-web-sunucusu-ubuntudebiancentosrhel) <br />
 <br />
 
