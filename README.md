@@ -1,3 +1,6 @@
+![TR](https://img.shields.io/badge/README-T%C3%BCrk%C3%A7e-blue?link=https%3A%2F%2Fgithub.com%2FLebweuh%2FCaptcha-PHP%2Fblob%2Fmain%2FREADME.tr.md)
+![EN](https://img.shields.io/badge/README-English-blue?link=https%3A%2F%2Fgithub.com%2FLebweuh%2FCaptcha-PHP%2Fblob%2Fmain%2FREADME.md)
+
 
 # Captcha PHP
 Very easy to use advanced captcha system for people who dont want to use third party apps for captcha like me.
@@ -121,12 +124,6 @@ $imageHeight = 50;
 ### Set Text Size
 ```php
 $textSize = 20;
-```
-
-
-### Set Character Count
-```php
-$charCount = 7;
 ```
 
 
